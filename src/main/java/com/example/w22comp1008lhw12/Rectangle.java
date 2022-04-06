@@ -2,10 +2,23 @@ package com.example.w22comp1008lhw12;
 
 public class Rectangle {
     private double height, width;
+    private String wallName;
 
-    public Rectangle(double height, double width) {
+    public Rectangle(String wallName, double height, double width) {
         setHeight(height);
         setWidth(width);
+        setWallName(wallName);
+    }
+
+    public String getWallName() {
+        return wallName;
+    }
+
+    public void setWallName(String wallName) {
+        if (wallName.length()>= 1)
+            this.wallName = wallName;
+        else
+            throw new IllegalArgumentException("Wall name must be at least 1 character");
     }
 
     public double getHeight() {
