@@ -1,6 +1,6 @@
 package com.example.w22comp1008lhw12;
 
-public class Circle {
+public class Circle implements TwoDimensionalShape{
     private double radius;
     private String wallName;
 

@@ -1,6 +1,8 @@
 package com.example.w22comp1008lhw12;
 
-public class Rectangle {
+import javafx.fxml.Initializable;
+
+public class Rectangle implements TwoDimensionalShape {
     private double height, width;
     private String wallName;
 
@@ -47,4 +49,6 @@ public class Rectangle {
     {
         return width * height;
     }
+
+
 }
